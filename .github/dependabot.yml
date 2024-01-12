@@ -11,9 +11,10 @@ updates:
       - "gradle"
       - "kotlin"
       - "automatic-merge"
+      - "demo1"
 
   - package-ecosystem: "gradle"
-    directory: "/demo1/"
+    directory: "/demo2/"
     schedule:
       interval: "daily"
       time: "09:00"
@@ -23,9 +24,10 @@ updates:
       - "gradle"
       - "kotlin"
       - "automatic-merge"
+      - "demo2"
 
   - package-ecosystem: "gradle"
-    directory: "/demo1/"
+    directory: "/demo3/"
     schedule:
       interval: "daily"
       time: "09:00"
@@ -35,3 +37,4 @@ updates:
       - "gradle"
       - "kotlin"
       - "automatic-merge"
+      - "demo3"
