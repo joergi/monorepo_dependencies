@@ -11,6 +11,8 @@ on:
 
 jobs:
   test-demo-1:
+    if: |
+      !contains(github.event.pull_request.labels.*.name, 'automatic-merge')
     runs-on: ubuntu-latest
     defaults:
       run:

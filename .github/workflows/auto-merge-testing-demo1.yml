@@ -1,22 +1,25 @@
-name: Test Demo 2
+ame: Auto-Merge Test Demo 1
 
 on:
   pull_request:
     paths:
+      - 'demo1/**'
       - 'demo2/**'
+      - 'demo3/**'
       - '.github/**'
     branches: [ main ]
 
   workflow_dispatch: {}
 
 jobs:
-  test-demo-2:
+  auto-merge-test-demo-1:
     if: |
-      !contains(github.event.pull_request.labels.*.name, 'automatic-merge')
+      contains(github.event.pull_request.labels.*.name, 'demo1') ||
+      contains(github.event.pull_request.labels.*.name, 'automatic-merge')
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./demo2
+        working-directory: ./demo1
     steps:
       - uses: actions/checkout@v4
       - name: Set up JDK 21

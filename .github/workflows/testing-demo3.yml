@@ -11,10 +11,12 @@ on:
 
 jobs:
   test-demo-3:
+    if: |
+      !contains(github.event.pull_request.labels.*.name, 'automatic-merge')
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./demo1
+        working-directory: ./demo3
     steps:
       - uses: actions/checkout@v4
       - name: Set up JDK 21
