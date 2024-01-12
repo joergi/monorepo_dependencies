@@ -1,0 +1,37 @@
+version: 2
+updates:
+  - package-ecosystem: "gradle"
+    directory: "/demo1/"
+    schedule:
+      interval: "daily"
+      time: "09:00"
+    open-pull-requests-limit: 100
+    labels:
+      - "dependencies"
+      - "gradle"
+      - "kotlin"
+      - "automatic-merge"
+
+  - package-ecosystem: "gradle"
+    directory: "/demo1/"
+    schedule:
+      interval: "daily"
+      time: "09:00"
+    open-pull-requests-limit: 100
+    labels:
+      - "dependencies"
+      - "gradle"
+      - "kotlin"
+      - "automatic-merge"
+
+  - package-ecosystem: "gradle"
+    directory: "/demo1/"
+    schedule:
+      interval: "daily"
+      time: "09:00"
+    open-pull-requests-limit: 100
+    labels:
+      - "dependencies"
+      - "gradle"
+      - "kotlin"
+      - "automatic-merge"
