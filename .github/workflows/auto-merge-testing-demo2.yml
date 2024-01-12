@@ -12,7 +12,7 @@ on:
   workflow_dispatch: {}
 
 jobs:
-  auto-merge-test-demo-1:
+  auto-merge-test-demo-2:
     if: |
       contains(github.event.pull_request.labels.*.name, 'demo2') ||
       contains(github.event.pull_request.labels.*.name, 'automatic-merge')
