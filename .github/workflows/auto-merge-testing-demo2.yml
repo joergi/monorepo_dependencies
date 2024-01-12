@@ -1,4 +1,4 @@
-ame: Auto-Merge Test Demo 2
+name: Auto-Merge Test Demo 2
 
 on:
   pull_request:
