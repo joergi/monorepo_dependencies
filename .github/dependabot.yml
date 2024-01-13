@@ -4,7 +4,7 @@ updates:
     directory: "/demo1/"
     schedule:
       interval: "daily"
-      time: "09:00"
+      time: "05:00"
     open-pull-requests-limit: 100
     labels:
       - "dependencies"
@@ -17,7 +17,7 @@ updates:
     directory: "/demo2/"
     schedule:
       interval: "daily"
-      time: "09:00"
+      time: "06:00"
     open-pull-requests-limit: 100
     labels:
       - "dependencies"
@@ -30,7 +30,7 @@ updates:
     directory: "/demo3/"
     schedule:
       interval: "daily"
-      time: "09:00"
+      time: "07:00"
     open-pull-requests-limit: 100
     labels:
       - "dependencies"
