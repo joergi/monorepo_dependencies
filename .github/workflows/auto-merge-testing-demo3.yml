@@ -9,6 +9,7 @@ on:
       - '.github/**'
     branches: [ main ]
   workflow_dispatch: {}
+
 concurrency: ${{ github.workflow }}
 
 jobs:
