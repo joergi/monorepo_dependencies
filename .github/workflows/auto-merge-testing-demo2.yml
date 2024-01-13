@@ -8,8 +8,9 @@ on:
       - 'demo3/**'
       - '.github/**'
     branches: [ main ]
-
   workflow_dispatch: {}
+
+concurrency: ${{ github.workflow }}
 
 jobs:
   auto-merge-test-demo-2:
